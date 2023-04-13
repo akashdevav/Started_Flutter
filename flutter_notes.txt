@@ -9,3 +9,8 @@ There are lots of widgers on flutter, some of the basic core widget are:-
 	-> Scaffold widget....
 
 -> RunApp() is the pre-defined function in dart
+
+-> There are two types of parameter or arguments are there:
+	1. Positional parameter (it just simply passes an arguments from ordered manner)
+	2. Named parameter (the arguments are in key pair terms warped with curley brackets)
+
