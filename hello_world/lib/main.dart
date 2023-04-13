@@ -9,7 +9,19 @@ void main() {
             title: const Text('WELCOME BACK',
                 style: TextStyle(fontStyle: FontStyle.italic)),
             backgroundColor: Color.fromARGB(255, 38, 1, 46)),
-        body: Container(
+        body: const DesignBG()
+      ),
+    ),
+  );
+}
+
+class DesignBG extends StatelessWidget{
+  //initiate constructor
+  const DesignBG({super.key});
+  
+  @override
+  Widget build(context){
+    return Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
             Color.fromARGB(255, 175, 60, 196),
@@ -24,8 +36,6 @@ void main() {
                   fontStyle: FontStyle.italic),
             ),
           ),
-        ),
-      ),
-    ),
-  );
+        );
+  }
 }
