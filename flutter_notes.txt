@@ -1,0 +1,11 @@
+Flutter basics:- 
+
+->Flutter is based on dart language.
+
+->Widgets:
+	In flutter everything has works based on the widgets.
+There are lots of widgers on flutter, some of the basic core widget are:-
+	-> MaterialApp widget
+	-> Scaffold widget....
+
+-> RunApp() is the pre-defined function in dart
