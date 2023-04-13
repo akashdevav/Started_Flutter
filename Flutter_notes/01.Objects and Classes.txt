@@ -1,0 +1,34 @@
+-> Objects:- 
+	~ Dart is fully based on Objects.
+	~ Everything in the flutter comes at objects.
+	eg: widgets, datatypes like int,string,float,bool -> at the end all must be called as objects.
+
+-> Class in flutter:-
+	Simply the classes are used in the flutter is to obtain same set of conditons or functionality or configuration that can takes to n number of multiple places.
+	In other hand we can call the classes to multiple places.
+
+Defining a class in flutter have some certain format that should be followed:
+	~ use class key word followed by the class name which is users convinience.
+	~ also can be extended by some widgets like statefullwidget or statlesswidgets.
+	~ followed by curley brackets.
+
+eg: class class_name extends statelessWidget {
+	
+	};
+
+-> Constructor:-
+	
+	~ within the class we have to define the constructor, which gives a more configurations to the class.
+	There is some format that has followed by define a constructor:
+
+	eg: class_name(key):{super.key:key} ->in shortform->	class_name({super.key});
+
+	Here, {super.key} represents -> collecting metadatas from the classes and objects.
+	~ followed by some attributes like @override - for the purpose for metadata.
+
+	~ And in the class start with a function called build function or method which returns the widget.
+	
+	eg: widget build(context){
+		return _widgets_
+		};
+	~ Here, context is the parameter - which defines metadata of class.
