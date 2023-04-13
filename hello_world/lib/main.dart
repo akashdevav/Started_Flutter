@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+     MaterialApp(
       home: Scaffold(
+        appBar: AppBar(title: const Text('WELCOME BACK'),backgroundColor: const Color.fromARGB(255, 74, 5, 87)),
         backgroundColor: Colors.purpleAccent,
-        body: Center(
+        body: const Center(
           child: Text(
             'Hello world!',
             style: TextStyle(
