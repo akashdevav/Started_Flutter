@@ -14,3 +14,10 @@ There are lots of widgers on flutter, some of the basic core widget are:-
 	1. Positional parameter (it just simply passes an arguments from ordered manner)
 	2. Named parameter (the arguments are in key pair terms warped with curley brackets)
 
+Widgets:-
+----------
+-> MaterialApp widget - Also known as root widget, contantains lots of widget for the application.
+
+-> Scaffold widget - It is used to implement the basic material design visual layout structure.
+
+-> Container widget - Convenience wiedge that contains painting, sizing widgets etc,..
