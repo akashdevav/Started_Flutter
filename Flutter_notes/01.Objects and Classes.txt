@@ -32,3 +32,17 @@ eg: class class_name extends statelessWidget {
 		return _widgets_
 		}
 	~ Here, context is the parameter - which defines metadata of class.
+
+/*By creating a class some steps that must be followed:
+  -> class name should be uppercase at start position.
+  -> class can extend with some widget.
+  -> inside of the class there must be a constructor.
+  -> finally there is a build function which can return the widget */
+
+-> Variables :-
+	In dart variables are known as data structure.
+	We can define the variable type as:
+		-> var
+		-> final (data are stored in fixed state)
+		-> const
+	the variable type 'final' and 'const' are more over same type. 
