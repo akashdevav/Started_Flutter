@@ -45,4 +45,6 @@ eg: class class_name extends statelessWidget {
 		-> var
 		-> final (data are stored in fixed state)
 		-> const
-	the variable type 'final' and 'const' are more over same type. 
+	the variable type 'final' and 'const' are more over same type.
+
+-> constructor reusable -> using the constructor part to add the required arguments, the argument should be the named argument or positional argument.

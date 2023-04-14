@@ -11,7 +11,7 @@ void main() {
             title: const Text('WELCOME BACK',
                 style: TextStyle(fontStyle: FontStyle.italic)),
             backgroundColor:const Color.fromARGB(255, 38, 1, 46)),
-        body: const GradientContainer()
+        body:  GradientContainer.purple()
       ),
     ),
   );
