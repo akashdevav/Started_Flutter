@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/gradient_container.dart';
+
 
 void main() {
   runApp(
@@ -8,34 +10,10 @@ void main() {
         appBar: AppBar(
             title: const Text('WELCOME BACK',
                 style: TextStyle(fontStyle: FontStyle.italic)),
-            backgroundColor: Color.fromARGB(255, 38, 1, 46)),
-        body: const DesignBG()
+            backgroundColor:const Color.fromARGB(255, 38, 1, 46)),
+        body: const GradientContainer()
       ),
     ),
   );
 }
 
-class DesignBG extends StatelessWidget{
-  //initiate constructor
-  const DesignBG({super.key});
-  
-  @override
-  Widget build(context){
-    return Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 175, 60, 196),
-            Color.fromARGB(255, 70, 5, 82)
-          ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
-          child: const Center(
-            child: Text(
-              'Hello world!',
-              style: TextStyle(
-                  color: Color.fromARGB(255, 254, 253, 253),
-                  fontSize: 30.0,
-                  fontStyle: FontStyle.italic),
-            ),
-          ),
-        );
-  }
-}
