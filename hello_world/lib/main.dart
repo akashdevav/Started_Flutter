@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/gradient_container.dart';
+import 'package:hello_world/appbar.dart';
 
 
 void main() {
@@ -7,11 +8,8 @@ void main() {
     MaterialApp(
       home: Scaffold(
         //backgroundColor: Colors.purpleAccent,
-        appBar: AppBar(
-            title: const Text('WELCOME BACK',
-                style: TextStyle(fontStyle: FontStyle.italic)),
-            backgroundColor:const Color.fromARGB(255, 38, 1, 46)),
-        body:  GradientContainer.purple()
+        appBar: const AppsBar(),
+        body: Column(children: [GradientContainer.purple()]) 
       ),
     ),
   );

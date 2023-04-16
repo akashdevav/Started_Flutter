@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/styletext.dart';
+
 
 //created separate class for container widget
 /*By creating a class some steps that must be followed:
@@ -9,8 +9,7 @@ import 'package:hello_world/styletext.dart';
   -> finally there is a build function which can return the widget */
 
 //Reusable widgets and constructor function
-const aligntop =
-    Alignment.topLeft; // defines a variables for the object properties
+const aligntop = Alignment.topLeft; // defines a variables for the object properties
 const alignbottom = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
@@ -29,7 +28,7 @@ class GradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [colors1, colors2], begin: aligntop, end: alignbottom)),
-      child: const Center(child: StyleText('Hello world!')),
+      child: Center(child: Image.asset('assets/Images/dice-1.png'), widthFactor: 50), 
     );
   }
 }

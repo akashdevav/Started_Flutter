@@ -7,7 +7,7 @@ class StyleText extends StatelessWidget {
 
   @override
   Widget build(context){
-    return   Text(
+    return Text(
               text,
               style: const TextStyle(
                   color: Color.fromARGB(255, 254, 253, 253),
