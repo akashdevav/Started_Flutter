@@ -1,0 +1,7 @@
+02. Row and column widgets:
+
+-> Row is nothing but that it is represented as horizontal format.
+
+-> Column represented as vertical format.
+
+-> Flutter is easy for handle these above widgets two continue.....
