@@ -5,16 +5,13 @@ class AppsBar extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return AppBar(
-      title: const Text(
+    return AppBar(backgroundColor:const Color.fromARGB(255, 58, 4, 47), 
+      title:const Text(
         'welcom back!...',
         style: TextStyle(
-            color: Color.fromARGB(20, 20, 150, 100),
-            fontStyle: FontStyle.italic,
-            fontSize: 20,
-            fontWeight: FontWeight.w100),
+            color: Colors.white, fontSize: 20.0, fontStyle: FontStyle.italic),
       ),
-      backgroundColor: Color.fromARGB(21, 3, 191, 3),
+      
     );
   }
 }

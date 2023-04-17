@@ -16,9 +16,9 @@ class GradientContainer extends StatelessWidget {
   //initiate constructor
   const GradientContainer(this.colors1, this.colors2, {super.key});
 
-  GradientContainer.purple({super.key})
-      : colors1 = Color.fromARGB(255, 89, 8, 108),
-        colors2 = Color.fromARGB(255, 151, 51, 197);
+  const GradientContainer.purple({super.key})
+      : colors1 = const Color.fromARGB(255, 89, 8, 108),
+        colors2 = const Color.fromARGB(255, 151, 51, 197);
 
   final Color colors1;
   final Color colors2;
@@ -28,7 +28,7 @@ class GradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [colors1, colors2], begin: aligntop, end: alignbottom)),
-      child: Center(child: Image.asset('assets/Images/dice-1.png'), widthFactor: 50), 
+      child: Center(child: Image.asset('assets/Images/dice-1.png', height: 100.0, width: 100.0),), 
     );
   }
 }

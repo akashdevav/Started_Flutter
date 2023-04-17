@@ -8,8 +8,8 @@ void main() {
     MaterialApp(
       home: Scaffold(
         //backgroundColor: Colors.purpleAccent,
-        appBar: const AppsBar(),
-        body: Column(children: [GradientContainer.purple()]) 
+        appBar: const PreferredSize(preferredSize: Size.fromHeight(40.0), child: AppsBar()) ,
+        body: Column(children: [ GradientContainer.purple()],) 
       ),
     ),
   );
