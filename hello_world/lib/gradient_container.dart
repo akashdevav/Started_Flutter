@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 //created separate class for container widget
 /*By creating a class some steps that must be followed:
   -> class name should be uppercase at start position.
@@ -9,26 +8,47 @@ import 'package:flutter/material.dart';
   -> finally there is a build function which can return the widget */
 
 //Reusable widgets and constructor function
-const aligntop = Alignment.topLeft; // defines a variables for the object properties
+const aligntop =
+    Alignment.topLeft; // defines a variables for the object properties
 const alignbottom = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   //initiate constructor
-  const GradientContainer(this.colors1, this.colors2, {super.key});
+   GradientContainer(this.colors1, this.colors2, {super.key});
 
-  const GradientContainer.purple({super.key})
-      : colors1 = const Color.fromARGB(255, 89, 8, 108),
-        colors2 = const Color.fromARGB(255, 151, 51, 197);
+// multiple construction method :-
+  // const GradientContainer.purple({super.key})
+  //     : colors1 = const Color.fromARGB(255, 89, 8, 108),
+  //       colors2 = const Color.fromARGB(255, 151, 51, 197);
 
   final Color colors1;
   final Color colors2;
+
+  var diceImage = 'assets/Images/dice-1.png';
+  void RollDice_btn() {
+    diceImage = 'assets/Images/dice-3.png';
+  }
+
   @override
   Widget build(context) {
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [colors1, colors2], begin: aligntop, end: alignbottom)),
-      child: Center(child: Image.asset('assets/Images/dice-1.png', height: 100.0, width: 100.0),), 
+      child: Center(
+          child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset(diceImage, height: 100.0, width: 100.0),
+          const Padding(padding: EdgeInsets.all(8.0)),
+          TextButton(
+              onPressed: RollDice_btn,
+              child: const Text(
+                'Roll dice',
+                style: TextStyle(fontSize: 15.0, color: Colors.white),
+              ))
+        ],
+      )),
     );
   }
 }

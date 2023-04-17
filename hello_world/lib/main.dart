@@ -5,11 +5,12 @@ import 'package:hello_world/appbar.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+     MaterialApp(
       home: Scaffold(
         //backgroundColor: Colors.purpleAccent,
-        appBar:  PreferredSize(preferredSize: Size.fromHeight(40.0), child: AppsBar()) ,
-        body:  GradientContainer.purple()//Column(children: [],) 
+        appBar:  const PreferredSize(preferredSize: Size.fromHeight(40.0), child: AppsBar()) ,
+        body:  //GradientContainer.purple() 
+        GradientContainer( const Color.fromARGB(255, 89, 8, 108),  const Color.fromARGB(255, 151, 51, 197)) 
       ),
     ),
   );
