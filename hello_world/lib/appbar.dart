@@ -7,7 +7,7 @@ class AppsBar extends StatelessWidget {
   Widget build(context) {
     return AppBar(backgroundColor:const Color.fromARGB(255, 58, 4, 47), 
       title:const Text(
-        'welcom back!...',
+        'Click and Roll...',
         style: TextStyle(
             color: Colors.white, fontSize: 20.0, fontStyle: FontStyle.italic),
       ),

@@ -15,7 +15,7 @@ const alignbottom = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   //initiate constructor
-   GradientContainer(this.colors1, this.colors2, {super.key});
+  const GradientContainer(this.colors1, this.colors2, {super.key});
 
 // multiple construction method :-
   // const GradientContainer.purple({super.key})
@@ -33,7 +33,7 @@ class GradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [colors1, colors2], begin: aligntop, end: alignbottom)),
-      child: Center(
+      child:const Center(
           child: DiceRoller()),
     );
   }
