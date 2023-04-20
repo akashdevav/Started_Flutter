@@ -6,6 +6,7 @@ import 'package:hello_world/appbar.dart';
 void main() {
   runApp(
     const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         //backgroundColor: Colors.purpleAccent,
         appBar:   PreferredSize(preferredSize: Size.fromHeight(40.0), child: AppsBar()) ,
