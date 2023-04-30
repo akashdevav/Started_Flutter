@@ -1,4 +1,4 @@
-# Started_Flutter
+# Dice_Roll app
 - Created Dice_Roll application in flutter.
 - "learn flutter for android and ios application development" commit all in (master BRANCH)
 
